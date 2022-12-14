@@ -112,6 +112,14 @@ html {
     border-radius: 20px;
 }
 
+.cube img {
+    width: 55%;
+}
+
+.bungalowsImg img{
+    float: left;
+}
+
 .tiposBungalows{
     text-align: center;
 }
