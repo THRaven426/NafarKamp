@@ -1,0 +1,131 @@
+:root {
+    --font-family-sans-serif: "Poppins", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    text-align: left;
+    background-color: #F3F3F3;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#superior1 {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(191, 191, 191);
+    position: fixed;
+}
+
+#sup-contacto {
+    margin-left: 10%;
+}
+
+#navegacion {
+    width: 75%;
+    background-color: #e1e1e1;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+#navegacion>div {
+    height: 100px;
+}
+
+#navegacion p {
+    padding-left: 40px;
+    font-size: 40px;
+    display: inline-block;
+}
+
+#nafarkamp
+
+.color-green {
+    color: green;
+}
+
+.body {
+    padding-top: 130px;
+}
+
+#bloqueMenu {
+    width: 100%;
+}
+
+#menu {
+    padding-top: 30px;
+    margin: 0px;
+    float: right;
+    height: 54px;
+    overflow: hidden;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    line-height: 4rem;
+}
+
+#menu li {
+    display: inline-block;
+    text-align: center;
+    padding-left: 30px;
+}
+
+#menu li a:hover {
+    background-color: grey;
+}
+
+.logo {
+    position: absolute;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#logowhite {
+    opacity: 0;
+}
+
+#logowhite:hover {
+    opacity: 100%;
+    transition-duration: 0.4s;
+}
+
+.cube {
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 3%;
+    background-color: rgb(191, 191, 191);
+}
+
+.tiposBungalows{
+    text-align: center;
+}
+#contenedorCM {
+    display: flex;
+}
+
+#mxCubeM {
+    width: 33%;
+    margin-left: 33%;
+}
+
+#mapa {
+    width: 30%;
+    height: 80%;
+    margin:auto;
+}
