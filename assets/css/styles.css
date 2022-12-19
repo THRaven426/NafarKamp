@@ -51,8 +51,9 @@ html {
     display: inline-block;
 }
 
-#nafarkamp{
-    margin-top: -10px; /* HAY QUE ENCONTRAR EL ERROR */
+#nafarkamp {
+    margin-top: -10px;
+    /* HAY QUE ENCONTRAR EL ERROR */
 }
 
 .color-green {
@@ -116,24 +117,44 @@ html {
     width: 55%;
 }
 
-.bungalowsImg img{
+.bungalowsImg img {
     float: left;
 }
 
-.tiposBungalows{
+.tiposBungalows {
     text-align: center;
 }
+
 #contenedorCM {
     display: flex;
 }
 
+#imgcube {
+    display: inline-flex;
+    width: 70%
+}
+
+.imagenes {
+    width: auto;
+    margin-right: 15px;
+    float: right;
+}
+
+.imagenes img {
+    width: 400px;
+    margin-top: 20%;
+}
+
 #mxCubeM {
-    width: 33%;
-    margin-left: 33%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+    width: 50%;
 }
 
 #mapa {
     width: 30%;
     height: 80%;
-    margin:auto;
+    margin: auto;
+    margin-left: 0%;
 }
