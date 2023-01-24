@@ -1,0 +1,27 @@
+#footer {
+    background-color: #135f0c;
+    position: absolute;
+    width: 100%;
+    color: white;
+    margin-top: 200px;
+    display: inline-flex;
+}
+
+.enlaces {
+    width: 23%;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.enlaces a{
+    color: white
+}
+#izquierda {
+    width: 25%;
+    display: inline-flex;
+    justify-content: center;
+}
+#izquierda img {
+    width: 50%
+
+}
