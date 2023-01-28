@@ -10,8 +10,8 @@ body {
     background-color: black;
     opacity: 3;
     user-select: none;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imagenes/bosque2.png) ;
-    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imagenes/bosque2.png);
+
 }
 
 
@@ -242,4 +242,165 @@ input[type="radio"]:checked {
 #s5:checked~#slide3 {
     transform: translate3d(-40%, 0, -250px);
     box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3);
+}
+
+:root {
+    --font-family-sans-serif: "Poppins", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    text-align: left;
+    background-color: #232223;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#superior1 {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(9, 95, 121);
+    position: fixed;
+}
+
+#sup-contacto {
+    margin-left: 10%;
+}
+
+#navegacion {
+    width: 60%;
+    background-color: #22b3c1;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    border-radius: 30px;
+}
+
+#navegacion>div {
+    height: 80px;
+}
+
+#navegacion p {
+    padding-left: 40px;
+    font-size: 40px;
+    display: inline-block;
+}
+
+#nafarkamp {
+    margin-top: -10px;
+    /* HAY QUE ENCONTRAR EL ERROR */
+}
+
+.color-green {
+    color: green;
+}
+
+.body {
+    padding-top: 130px;
+}
+
+#bloqueMenu {
+    width: 100%;
+}
+
+#menu {
+    padding-top: 20px;
+    margin: 0px;
+    float: right;
+    height: 54px;
+    overflow: hidden;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    line-height: 4rem;
+}
+
+#menu li {
+    display: inline-block;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.logo {
+    position: absolute;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#logowhite {
+    opacity: 0;
+}
+
+#logowhite:hover {
+    opacity: 100%;
+    transition-duration: 0.4s;
+}
+
+.cube {
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 3%;
+    background-color: rgb(191, 191, 191);
+    border-radius: 20px;
+}
+
+.cube img {
+    width: 55%;
+}
+
+.bungalowsImg img {
+    float: left;
+}
+
+.tiposBungalows {
+    text-align: center;
+}
+
+#contenedorCM {
+    display: flex;
+}
+
+#imgcube {
+    display: inline-flex;
+    width: 70%
+}
+
+.imagenes {
+    width: auto;
+    margin-right: 15px;
+    float: right;
+}
+
+.imagenes img {
+    width: 400px;
+    margin-top: 20%;
+}
+
+#mxCubeM {
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+    width: 50%;
+}
+
+#mapa {
+    width: 30%;
+    height: 80%;
+    margin: auto;
+    margin-left: 0%;
 }
