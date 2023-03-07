@@ -1,162 +1,276 @@
-/* Estilos generales */
+/* NO MODIFICAR */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "RobotoBold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "RobotoMedium";
+    src: url(../fonts/Roboto-Medium.ttf);
+}
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "RobotoMedium";
     background-color: black;
     opacity: 3;
     user-select: none;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imagenes/bosque2.png);
+    background-color: #052805;
+    background-color: #016500;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23016500'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23013300'/%3E%3Cstop offset='1' stop-color='%23016500'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='translate(1100 0)'%3E%3Cg transform='translate(0 1500)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(-205.2 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.61' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
 
+h1{ font-size: 7em;}
+h2{ font-size: 2em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+button:hover{
+    background-color: rgb(255, 255, 255);
+    color: green;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+/* --------------------- */
+
+/* HEADER */
+
+header{
+    background-color: rgb(245,245,245);
+    z-index: 1;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(18, 91, 31);
+}
+.error {
+    color:red;
+}
+
+/* Efecto hover navegación */
+.hvr-bounce-to-top {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.hvr-bounce-to-top:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0d8352;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-bounce-to-top:hover {
+    color: white;
+}
+.hvr-bounce-to-top:hover:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+#button_login {
+    margin-left: 0px;
+    background-color: #000000;
+    border-radius: 10px;
+    color: white;
+}
+#button_login:hover {
+    background-color: #26a73e;
 }
 
 
+/* ------ FIN HEADER -------- */
 
-/* Zona Superior, imagen, texto y boton de reservas */
-#zona_superior {
-    background-position: center center;
+/* FOOTER */
+
+footer {
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    color: black;
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 150px;
+    justify-content: center;
+    display: inline-block;
+}
+
+footer{
+    display: inline-flex;
+}
+.enlaces {
+    width: 23%;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+    float: right;
+}
+
+.enlaces a {
+    color: black
+}
+
+#izquierda {
+    width: 25%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#izquierda img {
+    width: 50%;
+    position:relative;
+}
+
+/*-------FIN FOOTER---------*/
+
+/* DESDE AQUI HASTA LA PRÓXIMA MARCA SE MODIFICA EL ESTILO RESPONSIVE,
+   CUANDO SE PONE EN MODO "PANTALLA COMPLETA" HAY QUE MODIFICAR EN LA
+   OTRA SECCIÓN INDICADA MÁS ADELANTE */
+
+/* INDEX SECCIÓN SUPERIOR */
+#sec1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: 100%;
-    height: 400px;
-    z-index: 3;
-    position: relative;
-    display: grid;
-    place-content: center;
-    text-align: center;
+    background-position: center center;
 }
 
-.arribatxt h1 {
-    font-size: 600%;
-    color: black;
-    height: 60%;
+#sec1 h1{
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    margin-top: -20vw;
 }
-
-.arribatxt h2 {
-    font-size: 200%;
-    color: #17780E;
-    text-shadow: 0.5px 0px 0px black,
-        0px 0.5px 0px black,
-        -0.5px 0px 0px black,
-        0px -0.5px 0px black;
-    opacity: 90%;
-}
-
-#boton_reserva {
-    width: 200px;
-    height: 30px;
-    margin-top: 20px;
-    border-radius: 10px;
-    margin: 0 auto;
-    background-color: #080808;
-    border: #ffffff6e 1px solid;
-}
-
-#boton_reserva a {
-    text-decoration: none;
+#sec1 h2{
+    margin-bottom: 30px;
     color: white;
 }
 
-/* Bungalows superior */
-.contenedor {
-    width: max-content;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+
+#sec1 button{
+    font-size: 1.75em;
 }
 
-.card {
-    margin: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: 200px;
-    display: inline;
+/* ---- FIN INDEX SECCIÓN SUPERIOR ----- */
 
+/* INDEX SECCIÓN "SOMOS NAFARKAMP" */
+#sec2 .container{
+    text-align: center;
+    height: 250px;
+    background-color: white;
+    margin-bottom: 100px;
+    border-radius: 70px;
+    width: 90%;
 }
 
-.card-header img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+#sec2 h2{
+   padding-top: 50px;
+   margin-bottom: 30px;
+   font-family: "RobotoBold";
 }
+#sec2 p{
+    font-family: "RobotoMedium";
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-.card-body {
-    display: flex;
+/* --- FIN INDEX SECCIÓN "SOMOS NAFARKAMP" --- */
 
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    min-height: 250px;
-}
+/* INDEX SECCIÓN "SLIDE BUNGALOWS" */
 
-.tag {
-    background: #cccccc;
-    border-radius: 50px;
-    font-size: 12px;
-    margin: 0;
-    color: #fff;
-    padding: 2px 10px;
-    text-transform: uppercase;
-    cursor: pointer;
-
-}
-
-.tag-teal {
-    background-color: #47bcd4;
-}
-
-.tag-purple {
-    background-color: #5e76bf;
-}
-
-.tag-pink {
-    background-color: #cd5b9f;
-}
-
-.card-body p {
-    font-size: 13px;
-    margin: 0 0 40px;
-}
-
-.user {
-    display: flex;
-    margin-top: auto;
-}
-
-.user img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-.user-info h5 {
-    margin: 0;
-}
-
-.user-info small {
-    color: #545d7a;
-}
-
-
-/* Slide bungalows */
-
-#slide-bunw {
-    position: relative;
-    width: 30%;
-    height: 20vw;
+#sec3{
+    width: 50%;
+    height: 33vw;
     margin: 0px auto;
     transform-style: preserve-3d;
     perspective: 1400px;
-    top: 40px;
-}
+    top: 0px;
+    margin-bottom: 100px;
 
+}
 input[type="radio"] {
     position: relative;
     top: 108%;
@@ -176,21 +290,22 @@ input[type="radio"]:checked {
     opacity: 1;
 }
 
-#slide-bunw label,
-#slide-bunw img {
+#sec3 label,
+#sec3 img {
     display: flex;
     position: absolute;
     top: 0;
     left: 0;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 50vw;
     border-radius: 3px;
     color: white;
     cursor: pointer;
     transition: transform 400ms ease;
 }
+
+/* --- FIN INDEX SECCIÓN "SLIDES BUNGALOWS" --- */
 
 /* Activar el slide */
 #s1:checked~#slide1,
@@ -242,3 +357,558 @@ input[type="radio"]:checked {
     transform: translate3d(-40%, 0, -250px);
     box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3);
 }
+
+/* --- FIN INDEX SECCIÓN "SOMOS NAFARKAMP" --- */
+
+/* INDEX SECCIÓN "EL EQUIPO" */
+
+#sec4{
+    color: white;
+    background: linear-gradient(360deg, #000000, #ffffff00);
+}
+#sec4 .container{
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 30px auto;
+    width: 170px;
+    height: 170px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card .titulo_carta {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-size: 16px;
+    margin-top: 5px;
+    height: 40px;
+    color: white;
+    z-index: 1;
+    font-family: "RobotoMedium";
+  }
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+
+/* PÁGINA LOGIN */
+#sec-login{
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+#sec-login .container{
+    width: 380px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  }
+#sec-login .container .title{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    user-select: none;
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(-135deg, #00ff00, #034e00);
+  }
+  #sec-login .container form{
+    padding: 10px 30px 50px 30px;
+  }
+  #sec-login .container form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+  }
+  #sec-login .container form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+  #sec-login .container form .field input:focus,
+  form .field input:valid{
+    border-color: #56d041;
+  }
+  #sec-login .container form .field label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  #sec-login form .field input:focus ~ label,
+  form .field input:valid ~ label{
+    top: 0%;
+    font-size: 16px;
+    color: #0a5a0d;
+    background: #fff;
+    transform: translateY(-50%);
+  }
+  #sec-login form .content{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #sec-login form .content .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #sec-login form .content input{
+    width: 15px;
+    height: 15px;
+    background: red;
+  }
+  #sec-login form .content label{
+    color: #262626;
+    user-select: none;
+    padding-left: 5px;
+  }
+  #sec-login form .content .pass-link{
+    color: "";
+    font-size: 12px;
+  }
+  #sec-login form .field input[type="submit"]{
+    color: #fff;
+    border: none;
+    padding-left: 0;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(-135deg, #00ff00, #034e00);
+    transition: all 0.3s ease;
+  }
+  #sec-login form .field input[type="submit"]:active{
+    transform: scale(0.95);
+  }
+  #sec-login form .signup-link{
+    color: #262626;
+    margin-top: 20px;
+    text-align: center;
+  }
+  #sec-login form .pass-link a,
+  form .signup-link a{
+    color: #047b2e;
+    text-decoration: none;
+  }
+  #sec-login form .pass-link a:hover,
+  form .signup-link a:hover{
+    text-decoration: underline;
+  }
+
+  /* PÁGINA CONTACTO */
+
+#sec-contacto .container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+#sec-contacto .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#sec-contacto .container .content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+#sec-contacto .content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+#sec-contacto .content .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+#sec-contacto .content .left-side .details i{
+    font-size: 30px;
+    color: #00ff08;
+    margin-bottom: 10px;
+}
+#sec-contacto .content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+#sec-contacto .content .left-side .details .text-one,
+#sec-contacto .content .left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+}
+#sec-contacto .container .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+}
+#sec-contacto .content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #ffffff;
+}
+#sec-contacto .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+#sec-contacto .right-side .input-box input,
+#sec-contacto .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+#sec-contacto .right-side p{
+    color:#ffffff
+}
+#sec-contacto .right-side .message-box{
+    min-height: 110px;
+}
+#sec-contacto .right-side .input-box textarea{
+    padding-top: 6px;
+}
+#sec-contacto .right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+}
+#sec-contacto .right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #156701;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#sec-contacto .button input[type="button"]:hover{
+    background: #2acd01;
+    color:black;
+}
+/* PÁGINA RESERVAS */
+#reservas_sec1 .container{
+    color: white;
+    padding-top: 200px;
+    text-align: center;
+}
+/*PAGINA ABOUT US*/
+#aboutus_sec1{
+    background-color: white;
+    width: 70rem;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+#sec1abtus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#sec1abtus h1{
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+}
+#sec1abtus h2{
+    color: white;
+}
+
+#sec1abtus button{
+    font-size: 1.75em;
+}
+
+/* PÁGINA BUNGALOWS */
+#bung_sec1 .bunws {
+    margin-left:50px;
+    position: relative;
+	background: rgba(255, 255, 255, 0.90);
+	border-radius: 20px;
+	height: 40vw;
+	width: 85vw;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+
+#bung_sec1 {
+    padding-top: 150px;
+    margin-bottom: 100px;
+}
+
+.informacion {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.product-details {
+	position: absolute;
+	text-align: left;
+	overflow: hidden;
+    margin-top: 20px;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+    
+
+}
+.bung_secs .bunws{
+    margin-top: 20px;
+}
+
+.bung_secs .bunws .product-details h1{
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	color: #109257;
+	margin: 0;
+	
+}
+
+.bung_secs .bunws .product-details > p {
+    margin-top: 20px;
+	text-align: left;
+	font-size: 14px;
+	color: #000000;
+}
+.bung_secs .bunws .product-details > p {
+    margin-top: 20px;
+	text-align: left;
+	font-size: 14px;
+	color: #000000;
+}
+.control{
+	position: absolute;
+}
+
+.btn {
+	background:  #0da722;
+	border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: #eee;
+	padding: 0;
+	margin-top: 10px;	
+}
+
+.btn span {
+	display: inline-block;
+    padding: 10px 20px;
+	font-size: 0.7em;
+	margin:0;
+	
+}
+
+#bung_sec1 .product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+	height: 100%;
+	float: right;
+	width: 50%;
+	display: inline-block;
+}
+
+#bung_sec1 .bunws img {width: 100%;height: 100%;}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 14px;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.info h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+ }
+ .info li {
+    margin-left: 20px;
+ }
+.info h2 {text-align: center}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+.info ul li:hover{transform: translateX(50px) scale(1.3);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);}
+
+
+/* ESTA ES LA SECCION A MODIFICAR PARA EL CAMBIO ENTRE VENTANA COMPLETA
+   Y VENTANA 1/2 (RESPONSIVE) SOLO SE MODIFICA LO QUE QUIERES, 
+   IMPORTANTE NO COPIAR TODO PORQUE SINO ES AÑADIR DE MÁS !!! 
+   ¡¡¡ SI CAMBIAS EL WIDTH ARRIBA AÑADE SOLO EL WIDTH AQUI ABAJO :) !!!*/
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #button_login {
+        margin-left: 250px;
+    }
+ 
+
+    #sec1 h1{
+        color: rgb(255, 255, 255);
+        font-size: 100px;
+        margin-top: 2.5vw;
+    }
+  
+
+    #sec2 .container{
+        display: flex;
+        justify-content: space-evenly;
+        height: 300px;
+    }
+
+    #sec2 .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: justify;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #sec2 .img-container{
+        background-image: url("../imagenes/LOGO_PRUEBA1\(color\).png");
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 300px; 
+    }
+
+    #sec2 h2{
+        padding-top: 0px;
+     }
+    #sec2 p{
+        padding-left: 0px;
+        padding-right: 0px;
+        font-family: "RobotoMedium";
+      }
+
+    #sec3{
+        width: 30%;
+        height: 20vw;
+    }
+    #sec3 label,
+    #sec3 img {
+        width: 30vw;
+    }
+    .card {
+        margin: 30px auto;
+        width: 180px;
+        height: 180px;
+        border-radius: 40px;
+        box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      #bung_sec1 .bunws {
+        height: 20vw;
+        width: 50vw;
+    
+    }
+    footer .container {
+        justify-content: flex-end;
+    }
+}
+
+
+
+
+

@@ -1,21 +1,76 @@
-#footer {
-    background-color: #135f0c;
-    position: absolute;
-    width: 100%;
-    color: white;
-    margin-top: 200px;
-    display: inline-flex;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    opacity: 3;
+    user-select: none;
+}
+
+h1 {
+    font-size: 7em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    color: black;
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 150px;
+    justify-content: center;
+    display: inline-block;
+}
+
+#footer{
+    display: inline-flex;
+}
 .enlaces {
     width: 23%;
     display: inline-flex;
     justify-content: center;
-    margin-top: 1%;
+    position: relative;
+    margin-top: 20px;
+    float: right;
 }
 
 .enlaces a {
-    color: white
+    color: black
 }
 
 #izquierda {
@@ -25,5 +80,12 @@
 }
 
 #izquierda img {
-    width: 50%
+    width: 50%;
+    position:relative;
+}
+
+@media (min-width: 850px) {
+    footer .container {
+        justify-content: flex-end;
+    }
 }

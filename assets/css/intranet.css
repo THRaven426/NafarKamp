@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "RobotoBold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "RobotoMedium";
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body {
+  background-image: radial-gradient( circle 767px at 10.2% 22.1%,  rgba(11,218,81,1) 0%, rgb(1, 70, 12) 90% );
+  min-height: 100vh;
+  font-family: "RobotoBold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons {
+  min-width: 700px;
+  width: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons a {
+  text-decoration: none;
+  font-size: 100px;
+  width: 200px;
+  height: 200px;
+  line-height: 60px;
+  text-align: center;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+.buttons i{
+    padding-top: 45px;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}
+#names{
+    position: absolute;
+    margin-top: -300px;
+    width: 750px;
+}
+#names .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#names p{
+    padding: 10px 50px;
+    float: left;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size:30px; 
+}
+/**/
+#titulo{
+    border: black solid 2px;
+    border-radius: 40px;
+    font-family: "RobotoMedium";
+    position: absolute;
+    background-color: white; 
+    margin-top: -500px;
+    width: 750px;
+}
+#titulo .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#titulo p{
+    font-size:80px; 
+}
+#titulo #username {
+    font-size:15px;
+}
+@media (min-width:850px){
+    #names {
+        width: 900px;
+    }
+    #names p{
+    padding: 10px 55px;
+    }
+}
